@@ -15,4 +15,15 @@ connection.connect((err) => {
   console.log('Conexion exitosa : ' + connection.threadId);
 });
 
+function closeConnection() {
+  connection.end((err) => {
+    if (err) {
+      console.error('Error al cerrar la conexión: ', err.stack);
+    } else {
+      console.log('Conexión cerrada exitosamente.');
+    }
+  });
+}
+
+
 module.exports = connection;
