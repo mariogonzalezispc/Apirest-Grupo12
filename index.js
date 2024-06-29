@@ -13,7 +13,6 @@ app.get("/", (req, res) => {
 
 app.use("/posteos",postRouter)
 
-
 app.listen(port, () => {
     console.log(`Servidor OK en el puerto ${port}`);
 })
