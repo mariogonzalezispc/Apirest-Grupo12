@@ -32,6 +32,12 @@
 - Password : grupo12
 - Nombre base de datos : LibrosCaCgrupo12
 
+## Estructura de la base de datos
+
+![Base de datos en gestor Heidi Sql](./img/BD.png)
+<br>
+
+
 ## Credenciales para usar api desplegada online 
 
 
