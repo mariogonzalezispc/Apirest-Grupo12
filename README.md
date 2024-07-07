@@ -37,6 +37,10 @@
 ![Base de datos en gestor Heidi Sql](./img/BD.png)
 <br>
 
+## Primeras pruebas de conexion  
+
+![Prueba de conexion](./img/Conexion%20exitosa.png)
+<br>
 
 ## Credenciales para usar api desplegada online 
 
