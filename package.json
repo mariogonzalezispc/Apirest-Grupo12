@@ -1,17 +1,23 @@
 {
   "name": "apirest-grupo12",
-  "description": "- Url :    http://ispcserver1.ddns.net\r - Puerto : 3306 \r - Usuario : cacgrupo12\r - Password : grupo12\r - Nombre base de datos : LibrosCaCgrupo12",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "CaC Grupo 12",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.10.2",
+    "nodemon": "^3.1.4",
+    "sequelize": "^6.37.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.21"
