@@ -6,17 +6,17 @@
 - **DNI:** 41603130
 - **Usuario GitHub:** [LucioBurella](https://github.com/LucioBurella)
 
-### Leonardo
-- **DNI:**
-- **Usuario GitHub:** [Mariogonzalezispc](https://github.com/Mariogonzalezispc)
+### Di Francesco Leonardo
+- **DNI:** 34840278
+- **Usuario GitHub:** [leitodi](https://github.com/leitodi)
 
 ### Gonzalez Mario
 - **DNI:** 21394947
-- **Usuario GitHub:** [Mariogonzalezispc](https://github.com/Mariogonzalezispc)
+- **Usuario GitHub:** [mariogonzalezispc](https://github.com/mariogonzalezispc)
 
-### Gonzalez Mario
-- **DNI:** 21394947
-- **Usuario GitHub:** [Mariogonzalezispc](https://github.com/Mariogonzalezispc)
+### Recio Andres Martin
+- **DNI:** 29142380
+- **Usuario GitHub:** [andresrecio82](https://github.com/andresrecio82)
 
 
 
@@ -37,4 +37,3 @@
 
 - Url :    http://ispcserver1.ddns.net
 - Puerto : 3030
-
