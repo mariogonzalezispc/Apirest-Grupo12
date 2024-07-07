@@ -22,7 +22,5 @@ app.listen(port, () => {
 });
 
 
-
-
 // correr con este comando nodemon
 // npm run dev
