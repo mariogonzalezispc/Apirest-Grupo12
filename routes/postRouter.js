@@ -1,15 +1,13 @@
-const express = require("express")
+const express = require("express");
+const router = express.Router();
+const Listado = require("./listado.js");
+const Agrega = require("./agrega.js");
+const Modifica = require("./modificar.js");
+const Borra = require("./borra.js");
 
-const {enviarPosts,enviarUnPost} = require("../controllers/postControllers.js")
-const router = express.Router()
+router.use("/lista", Listado);
+router.use("/agregar", Agrega);
+router.use("/modificar", Modifica);
+router.use("/borrar", Borra);
 
-router.get("/",enviarPosts)
-router.get("/:id",enviarUnPost)
-
-router.get("/",(req, res) => {
-    res.send("aca van los posteos")
-})
-
-
-
-module.exports = router
+module.exports = router;
