@@ -7,3 +7,4 @@
 - Puerto : 3306 
 - Usuario : cacgrupo12
 - Password : grupo12
+- Nombre base de datos : LibrosCaCgrupo12
