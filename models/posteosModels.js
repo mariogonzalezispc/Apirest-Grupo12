@@ -8,6 +8,7 @@ const PosteosModel = db.define('Libros',
         genero:{type: DataTypes.STRING},
         ultimaedicion:{type: DataTypes.STRING},
         idioma: {type: DataTypes.STRING},
+        
     }
 )
 

@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const listadoController = require("../controllers/listadoController");
 
-router.get("/", listadoController.getList);
+router.get("/", listadoController.getLista);
 
 module.exports = router;
-
