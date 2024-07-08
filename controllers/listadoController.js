@@ -5,6 +5,7 @@ const listadoController = {
         try {
             const listaLibros = await posteoModel.findAll();
             res.json(listaLibros);
+            res.json({ message: "Listado de Libros" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
@@ -13,7 +14,7 @@ const listadoController = {
         try {
             const { id } = req.params;
             await posteoModel.destroy({ where: { id: id } });
-            res.json({ message: "Item deleted successfully" });
+            res.json({ message: "Registro Borrado Correctamente !!!" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
@@ -22,6 +23,7 @@ const listadoController = {
         try {
             const nuevoRegistro = await posteoModel.create(req.body);
             res.status(201).json(nuevoRegistro);
+            res.json({ message: "Registro Creado Correctamente !!!" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
@@ -30,7 +32,7 @@ const listadoController = {
         try {
             const { id } = req.params;
             await posteoModel.update(req.body, { where: { id: id } });
-            res.json({ message: "Item updated successfully" });
+            res.json({ message: "Registro Actualizado Correctamente !!!" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }

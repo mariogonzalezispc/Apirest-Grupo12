@@ -8,11 +8,3 @@ router.post("/agregar", listadoController.addItem);
 router.put("/modificar/:id", listadoController.updateItem);
 
 module.exports = router;
-
-
-
-
-
-
-
-module.exports = router;
