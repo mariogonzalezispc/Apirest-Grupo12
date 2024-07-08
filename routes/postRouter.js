@@ -1,13 +1,18 @@
 const express = require("express");
 const router = express.Router();
-const Listado = require("./listado.js");
-const Agrega = require("./agrega.js");
-const Modifica = require("./modificar.js");
-const Borra = require("./borra.js");
+const listadoController = require("../controllers/listadoController");
 
-router.use("/lista", Listado);
-router.use("/agregar", Agrega);
-router.use("/modificar", Modifica);
-router.use("/borrar", Borra);
+router.get("/lista", listadoController.getLista);
+router.delete("/borrar/:id", listadoController.deleteItem);
+router.post("/agregar", listadoController.addItem);
+router.put("/modificar/:id", listadoController.updateItem);
+
+module.exports = router;
+
+
+
+
+
+
 
 module.exports = router;

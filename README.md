@@ -47,3 +47,26 @@
 
 - Url :    http://ispcserver1.ddns.net
 - Puerto : 3030
+
+
+
+## Pruebas de metodo POST  
+
+![Metodo POST](./img/Post.png)
+<br>
+
+## Pruebas de metodo PUT 
+
+![Metodo PUT](./img/Put01.png)
+<br>
+
+![Metodo PUT](./img/Put02.png)
+<br>
+
+## Pruebas de metodo DELETE
+
+![Metodo DELETE](./img/Delete_01.png)
+<br>
+
+![Metodo DELETE](./img/Delete_02.png)
+<br>
