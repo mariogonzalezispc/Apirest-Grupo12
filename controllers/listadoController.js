@@ -9,6 +9,17 @@ const listadoController = {
             res.status(500).json({ message: error.message });
         }
     },
+    traerUnLibro: async (req, res) => {
+        try {
+            const Libro = await posteoModel.findByPk(req.params.id)
+            res.json(Libro)
+        } catch (error) {
+
+        }
+    },
+
+
+
     deleteItem: async (req, res) => {
         try {
             const { id } = req.params;
