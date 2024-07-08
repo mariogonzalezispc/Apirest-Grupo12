@@ -22,18 +22,12 @@ const conexionDB = async ()=>{
     try {
         await db.authenticate();
         console.log('conexion exitosa a la BD');
-        
     } catch (error) {
         console.log('no conectado a la BD');
-        
     }
 }
-
 conexionDB();
-
 app.listen(port, () => {
     console.log(`Server corriendo en puerto ${port}`);
 });
-
-// correr con este comando nodemon
 // npm run dev
