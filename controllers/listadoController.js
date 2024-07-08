@@ -8,6 +8,32 @@ const listadoController = {
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
+    },
+    deleteItem: async (req, res) => {
+        try {
+            const { id } = req.params;
+            await posteoModel.destroy({ where: { id: id } });
+            res.json({ message: "Item deleted successfully" });
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    },
+    addItem: async (req, res) => {
+        try {
+            const nuevoRegistro = await posteoModel.create(req.body);
+            res.status(201).json(nuevoRegistro);
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    },
+    updateItem: async (req, res) => {
+        try {
+            const { id } = req.params;
+            await posteoModel.update(req.body, { where: { id: id } });
+            res.json({ message: "Item updated successfully" });
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
     }
 };
 
