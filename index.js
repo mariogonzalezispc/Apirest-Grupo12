@@ -9,7 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Hola Mundo");
+    res.send("Estas en el Home");
+    res.json({ message: "Estas en el Home" });
 });
 
 app.use("/", postRouter);
