@@ -70,3 +70,8 @@
 
 ![Metodo DELETE](./img/Delete_02.png)
 <br>
+
+## Pruebas de alojar en el HOST(raspberry PI con raspbian)
+
+![Hosting](./img/Host01.png)
+<br>
