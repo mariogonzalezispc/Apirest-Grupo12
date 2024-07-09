@@ -75,3 +75,9 @@
 
 ![Hosting](./img/Host01.png)
 <br>
+
+![Hosting](./img/Host%202.png)
+<br>
+
+![Hosting](./img/Host%203.png)
+<br>
