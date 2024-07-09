@@ -1,0 +1,25 @@
+sudo systemctl daemon-reload
+sudo systemctl start apirest-grupo12
+sudo systemctl status apirest-grupo12
+sudo systemctl restart apirest-grupo12
+sudo systemctl stop apirest-grupo12
+sudo systemctl status apirest-grupo12
+
+Archivo configuracion de api en el host Raspberry Pi 4
+
+ruta :  /etc/systemd/system/apirest-grupo12.service
+
+apirest-grupo12.service
+[Unit]
+Description=API REST Grupo 12
+After=network.target
+[Service]
+ExecStart=/home/ispca2g5/.nvm/versions/node/v18.20.4/bin/node /var/www/Apirest-Grupo12/index.js
+WorkingDirectory=/var/www/Apirest-Grupo12
+User=ispca2g5
+Restart=always
+Environment=PATH=/home/ispca2g5/.nvm/versions/node/v18.20.4/bin:/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+RestartSec=10
+[Install]
+WantedBy=multi-user.target
