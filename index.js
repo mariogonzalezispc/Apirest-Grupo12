@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
     res.send("Estas en el Home");
-    res.json({ message: "Estas en el Home" });
+    //res.json({ message: "Estas en el Home" });
 });
 
 app.use("/", postRouter);
