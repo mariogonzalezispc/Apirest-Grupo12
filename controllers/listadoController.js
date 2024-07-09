@@ -5,7 +5,6 @@ const listadoController = {
         try {
             const listaLibros = await posteoModel.findAll();
             res.json(listaLibros);
-            res.json({ message: "Listado de Libros" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
@@ -23,7 +22,6 @@ const listadoController = {
         try {
             const nuevoRegistro = await posteoModel.create(req.body);
             res.status(201).json(nuevoRegistro);
-            res.json({ message: "Registro Creado Correctamente !!!" });
         } catch (error) {
             res.status(500).json({ message: error.message });
         }
