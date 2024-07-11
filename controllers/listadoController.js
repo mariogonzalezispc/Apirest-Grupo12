@@ -9,6 +9,19 @@ const listadoController = {
             res.status(500).json({ message: error.message });
         }
     },
+    getItem: async (req, res) => {
+        try {
+            const { id } = req.params;
+            const libro = await posteoModel.findOne({ where: { id: id } });
+            if (libro) {
+                res.json(libro);
+            } else {
+                res.status(404).json({ message: "Libro no encontrado" });
+            }
+        } catch (error) {
+            res.status(500).json({ message: error.message });
+        }
+    },
     deleteItem: async (req, res) => {
         try {
             const { id } = req.params;
