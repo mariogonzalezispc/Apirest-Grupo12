@@ -19,7 +19,17 @@
 - **Usuario GitHub:** [andresrecio82](https://github.com/andresrecio82)
 
 
+## Tecnologías utilizadas (lenguajes)
 
+- Node.js
+- Express
+- Thunder Client(testing)
+
+## Tecnologías utilizadas (editores de codigo)
+
+- VSCODE (Editor de codigo)
+- IDX Google (Editor de codigo)
+- GitHub alojamiento del repositorio y versionador
 
 
 
@@ -81,3 +91,12 @@
 
 ![Hosting](./img/Host%203.png)
 <br>
+
+
+## Rutas que acepta el host 
+
+- http://ispcserver1.ddns.net:3030/lista
+- http://ispcserver1.ddns.net:3030/lista/:id
+- http://ispcserver1.ddns.net:3030/agregar
+- http://ispcserver1.ddns.net:3030/modificar/:id
+- http://ispcserver1.ddns.net:3030/borrar/:id
